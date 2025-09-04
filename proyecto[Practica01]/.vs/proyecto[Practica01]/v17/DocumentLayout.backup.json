@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\domain\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:domain\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\data\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:data\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\data\\articulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:data\\articulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\data\\iarticulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:data\\iarticulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\services\\articuloservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:services\\articuloservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "IArticuloRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\IArticuloRepository.cs",
+              "RelativeDocumentMoniker": "Data\\IArticuloRepository.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\IArticuloRepository.cs",
+              "RelativeToolTip": "Data\\IArticuloRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T01:09:48.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T23:57:02.045Z",
+              "WhenOpened": "2025-09-04T00:53:21.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArticuloServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Services\\ArticuloServicio.cs",
+              "RelativeDocumentMoniker": "Services\\ArticuloServicio.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Services\\ArticuloServicio.cs",
+              "RelativeToolTip": "Services\\ArticuloServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIAwwBsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T00:48:00.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArticuloRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\ArticuloRepository.cs",
+              "RelativeDocumentMoniker": "Data\\ArticuloRepository.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\ArticuloRepository.cs",
+              "RelativeToolTip": "Data\\ArticuloRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T00:27:06.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\DataHelper.cs",
+              "RelativeDocumentMoniker": "Data\\DataHelper.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\DataHelper.cs",
+              "RelativeToolTip": "Data\\DataHelper.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAIA8wEUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T00:00:01.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Articulo.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\Articulo.cs",
+              "RelativeDocumentMoniker": "Domain\\Articulo.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\Articulo.cs",
+              "RelativeToolTip": "Domain\\Articulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T00:34:44.225Z",
               "EditorCaption": ""
             }
           ]

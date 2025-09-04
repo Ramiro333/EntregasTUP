@@ -11,6 +11,7 @@ namespace proyecto_Practica01_.Domain
         public int NroFactura {  get; set; }
         public DateTime Fecha { get; set; }
         public FormaPago FormaPago { get; set; }
+        public Cliente Cliente { get; set; }
         public List<DetalleFactura> Detalle { get; set; }
     }
 }

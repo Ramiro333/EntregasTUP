@@ -15,7 +15,7 @@ namespace proyecto_Practica01_.Data
         {
             _connection = new SqlConnection(properties.Resources.CadenaConexionPC);
         }
-        private static DataHelper GetInstance()
+        public static DataHelper GetInstance()
         {
             if(_instance == null)
             {
@@ -50,6 +50,35 @@ namespace proyecto_Practica01_.Data
                 _connection.Close();
             }
             return dt;
+        }
+        public int ExecuteSPNonQuery(string sp, List<ParameterSP>? param = null)
+        {
+            int filasAfectadas = 0;
+            try
+            {
+                _connection.Open();
+                var cmd = new SqlCommand(sp, _connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = sp;
+                if (param != null)
+                {
+                    foreach (ParameterSP p in param)
+                        {
+                            cmd.Parameters.AddWithValue(p.Name, p.Valor);
+                        }
+                }
+                filasAfectadas = cmd.ExecuteNonQuery();
+                
+            }
+            catch (SqlException ex)
+            {
+                filasAfectadas = 0;
+            }
+            finally
+            {
+                _connection.Close();
+            }
+            return filasAfectadas;
         }
 
     }

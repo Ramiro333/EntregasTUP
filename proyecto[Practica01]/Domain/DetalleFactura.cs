@@ -9,6 +9,9 @@ namespace proyecto_Practica01_.Domain
     internal class DetalleFactura
     {
         public Articulo Articulo { get; set; }
+        public Factura Factura { get; set; }
+
         public int cantidad {  get; set; }
+        public float precio { get; set; }
     }
 }

@@ -3,40 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\domain\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:domain\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\domain\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:domain\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\domain\\formapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:domain\\formapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\domain\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:domain\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\data\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:data\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\data\\parametersp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:data\\parametersp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\data\\articulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:data\\articulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\data\\iarticulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:data\\iarticulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\proyecto[practica01].csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:proyecto[practica01].csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyecto[practica01]\\services\\articuloservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BEC37E-DE1C-4018-85BE-F2E1B8EEC5B8}|proyecto[Practica01].csproj|solutionrelative:services\\articuloservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,121 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Articulo.cs",
-              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\Articulo.cs",
-              "RelativeDocumentMoniker": "Domain\\Articulo.cs",
-              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\Articulo.cs",
-              "RelativeToolTip": "Domain\\Articulo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IArticuloRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\IArticuloRepository.cs",
+              "RelativeDocumentMoniker": "Data\\IArticuloRepository.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\IArticuloRepository.cs",
+              "RelativeToolTip": "Data\\IArticuloRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T00:24:07.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormaPago.cs",
-              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\FormaPago.cs",
-              "RelativeDocumentMoniker": "Domain\\FormaPago.cs",
-              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\FormaPago.cs",
-              "RelativeToolTip": "Domain\\FormaPago.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T00:23:56.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DetalleFactura.cs",
-              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\DetalleFactura.cs",
-              "RelativeDocumentMoniker": "Domain\\DetalleFactura.cs",
-              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\DetalleFactura.cs",
-              "RelativeToolTip": "Domain\\DetalleFactura.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T00:23:37.139Z",
+              "WhenOpened": "2025-09-04T01:09:48.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Factura.cs",
-              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\Factura.cs",
-              "RelativeDocumentMoniker": "Domain\\Factura.cs",
-              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\Factura.cs",
-              "RelativeToolTip": "Domain\\Factura.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T00:23:31.435Z",
+              "WhenOpened": "2025-09-04T00:53:21.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ParameterSP.cs",
-              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\ParameterSP.cs",
-              "RelativeDocumentMoniker": "Data\\ParameterSP.cs",
-              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\ParameterSP.cs",
-              "RelativeToolTip": "Data\\ParameterSP.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Title": "ArticuloServicio.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Services\\ArticuloServicio.cs",
+              "RelativeDocumentMoniker": "Services\\ArticuloServicio.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Services\\ArticuloServicio.cs",
+              "RelativeToolTip": "Services\\ArticuloServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIAwwBsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T00:04:39.435Z",
+              "WhenOpened": "2025-09-04T00:48:00.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "ArticuloRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\ArticuloRepository.cs",
+              "RelativeDocumentMoniker": "Data\\ArticuloRepository.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\ArticuloRepository.cs",
+              "RelativeToolTip": "Data\\ArticuloRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T00:27:06.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DataHelper.cs",
               "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\DataHelper.cs",
               "RelativeDocumentMoniker": "Data\\DataHelper.cs",
               "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Data\\DataHelper.cs",
               "RelativeToolTip": "Data\\DataHelper.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowBAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAIA8wEUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-02T00:00:01.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\properties\\Resources.resx",
-              "RelativeDocumentMoniker": "properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\properties\\Resources.resx",
-              "RelativeToolTip": "properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-09-01T23:58:16.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "proyecto[Practica01]",
-              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\proyecto[Practica01].csproj",
-              "RelativeDocumentMoniker": "proyecto[Practica01].csproj",
-              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\proyecto[Practica01].csproj",
-              "RelativeToolTip": "proyecto[Practica01].csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-01T23:58:10.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Articulo.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\Articulo.cs",
+              "RelativeDocumentMoniker": "Domain\\Articulo.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyecto[Practica01]\\Domain\\Articulo.cs",
+              "RelativeToolTip": "Domain\\Articulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T23:57:02.045Z",
+              "WhenOpened": "2025-09-04T00:34:44.225Z",
               "EditorCaption": ""
             }
           ]
