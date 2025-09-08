@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace proyecto_Practica01_.Domain
 {
-    internal class Factura
+    public class Factura
     {
         public int NroFactura {  get; set; }
         public DateTime Fecha { get; set; }

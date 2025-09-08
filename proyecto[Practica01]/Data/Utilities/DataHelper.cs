@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using Microsoft.Data.SqlClient;
-namespace proyecto_Practica01_.Data
+namespace proyecto_Practica01_.Data.Utilities
 {
     internal class DataHelper
     {

@@ -4,9 +4,11 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using proyecto_Practica01_.Data.Interfaces;
+using proyecto_Practica01_.Data.Utilities;
 using proyecto_Practica01_.Domain;
 
-namespace proyecto_Practica01_.Data
+namespace proyecto_Practica01_.Data.Repositorios
 {
     internal class ArticuloRepository : IArticuloRepository
     {

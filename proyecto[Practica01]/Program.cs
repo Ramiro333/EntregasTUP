@@ -2,36 +2,59 @@
 using proyecto_Practica01_.Domain;
 using proyecto_Practica01_.Services;
 
-Console.WriteLine("Hello, World!");
-ArticuloServicio oService = new ArticuloServicio();
-Console.WriteLine("Obtener todos los articulos - GetAll");
-List<Articulo> la = oService.GetArticulos();
-if (la.Count > 0)
-    foreach (Articulo a in la)
+//Console.WriteLine("Hello, World!");
+//ArticuloServicio oService = new ArticuloServicio();
+//Console.WriteLine("Obtener todos los articulos - GetAll");
+//List<Articulo> la = oService.GetArticulos();
+//if (la.Count > 0)
+//    foreach (Articulo a in la)
+//    {
+//        Console.WriteLine(a.ToString());
+//    }
+//else
+//    Console.WriteLine("no hay articulos");
+
+//Console.WriteLine("\nObtener un articulo por id - GetById");
+
+//Articulo? articulo2 = oService.GetArticuloById(5);
+//if (articulo2 != null)
+//{
+//    Console.WriteLine(articulo2);
+//}
+//else
+//{
+//    Console.WriteLine("No hay producto con ese id");
+//}
+
+//Console.WriteLine("eliminar articulo 5(deja de estar activo)");
+//if (oService.eliminarArticulo(5))
+//{
+//    Console.WriteLine("se eliomino el articulo 5");
+//}
+//else
+//{
+//    Console.WriteLine("no se pudo eliminar el articulo");
+//}
+
+DetalleFacturasServicio oDetalleFacturaServicio = new DetalleFacturasServicio();
+List<DetalleFactura> ldf = oDetalleFacturaServicio.GetDetalleFacturas();
+if (ldf.Count > 0)
+    foreach (DetalleFactura est in ldf)
     {
-        Console.WriteLine(a.ToString());
+        Console.WriteLine(est);
     }
 else
-    Console.WriteLine("no hay articulos");
-
-Console.WriteLine("\nObtener un articulo por id - GetById");
-
-Articulo? articulo2 = oService.GetArticuloById(5);
-if (articulo2 != null)
 {
-    Console.WriteLine(articulo2);
+    Console.WriteLine("no hay detalles");
 }
+Console.WriteLine("buscar los detalles de la factura 1");
+List<DetalleFactura> ldf2 = oDetalleFacturaServicio.GetDetallePorFactura(1);
+if (ldf2.Count > 0)
+    foreach (DetalleFactura est in ldf2)
+    {
+        Console.WriteLine(est);
+    }
 else
 {
-    Console.WriteLine("No hay producto con ese id");
-}
-
-Console.WriteLine("eliminar articulo 5(deja de estar activo)");
-if (oService.eliminarArticulo(5))
-{
-    Console.WriteLine("se eliomino el articulo 5");
-}
-else
-{
-    Console.WriteLine("no se pudo eliminar el articulo");
+    Console.WriteLine("no hay detalles");
 }
