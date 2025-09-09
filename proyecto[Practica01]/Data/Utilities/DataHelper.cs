@@ -51,15 +51,15 @@ namespace proyecto_Practica01_.Data.Utilities
             }
             return dt;
         }
-        public int ExecuteSPNonQuery(string sp, List<ParameterSP>? param = null)
+        public bool ExecuteSPNonQuery(string sp, List<ParameterSP>? param = null)
         {
-            int filasAfectadas = 0;
+            bool result;
             try
             {
                 _connection.Open();
                 var cmd = new SqlCommand(sp, _connection);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = sp;
+                //cmd.CommandText = sp;
                 if (param != null)
                 {
                     foreach (ParameterSP p in param)
@@ -67,18 +67,20 @@ namespace proyecto_Practica01_.Data.Utilities
                             cmd.Parameters.AddWithValue(p.Name, p.Valor);
                         }
                 }
-                filasAfectadas = cmd.ExecuteNonQuery();
-                
+                int filasAfectadas = cmd.ExecuteNonQuery();
+                result = filasAfectadas > 0;
+
+
             }
             catch (SqlException ex)
             {
-                filasAfectadas = 0;
+                result = false;
             }
             finally
             {
                 _connection.Close();
             }
-            return filasAfectadas;
+            return result;
         }
 
     }

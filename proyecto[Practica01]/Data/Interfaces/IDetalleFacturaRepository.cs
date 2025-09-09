@@ -10,7 +10,7 @@ namespace proyecto_Practica01_.Data.Interfaces
     internal interface IDetalleFacturaRepository
     {
         List<DetalleFactura> GetAll();
-        List<DetalleFactura> GetDetallesByFactura(int id);
+        //List<DetalleFactura> GetDetallesByFactura(int id);
         DetalleFactura? GetById(int id);
         bool Save(DetalleFactura detalleFactura);
         bool DeleteDetalleFactura(int id);

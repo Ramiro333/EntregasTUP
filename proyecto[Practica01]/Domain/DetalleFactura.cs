@@ -15,7 +15,11 @@ namespace proyecto_Practica01_.Domain
         public double precio { get; set; }
         public override string ToString()
         {
-            return "id factura: "+Factura.NroFactura+ " id detalle = " + idDetalleFactura+ " monto = "+ cantidad* precio + "Articulo = " + Articulo.Nombre;
+            return " id detalle = " + idDetalleFactura+ " monto = "+ cantidad* precio + " Articulo = " + Articulo.Nombre; 
+        }
+        public string ToStringConFactura()
+        {
+            return "id factura = "+Factura+" id detalle = " + idDetalleFactura + " monto = " + cantidad * precio + " Articulo = " + Articulo.Nombre;
         }
     }
 }

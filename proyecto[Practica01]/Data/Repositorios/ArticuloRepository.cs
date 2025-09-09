@@ -23,7 +23,7 @@ namespace proyecto_Practica01_.Data.Repositorios
                     Valor=id
                 }
             };
-            resultado = DataHelper.GetInstance().ExecuteSPNonQuery("SP_REGISTRAR_BAJA_ARTICULOS", param)>0;
+            resultado = DataHelper.GetInstance().ExecuteSPNonQuery("SP_REGISTRAR_BAJA_ARTICULOS", param);
             return resultado;
         }
 

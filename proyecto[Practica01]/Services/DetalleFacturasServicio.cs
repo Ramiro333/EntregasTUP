@@ -25,10 +25,9 @@ namespace proyecto_Practica01_.Services
         {
             return _DetalleFacturaRepository.GetById(id);
         }
-        public List<DetalleFactura> GetDetallePorFactura(int id)
+        public bool saveDetalle(DetalleFactura detalleFactura)
         {
-            return _DetalleFacturaRepository.GetDetallesByFactura(id);
+            return _DetalleFacturaRepository.Save(detalleFactura);
         }
-
     }
 }

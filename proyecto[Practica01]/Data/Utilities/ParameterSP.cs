@@ -10,5 +10,11 @@ namespace proyecto_Practica01_.Data.Utilities
     {
         public string Name { get; set; }
         public object Valor { get; set; }
+        public ParameterSP() { }
+        public ParameterSP(string name, object valor)
+        {
+            this.Name = name;
+            this.Valor = valor;
+        }
     }
 }
