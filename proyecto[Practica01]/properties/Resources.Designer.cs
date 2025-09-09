@@ -61,6 +61,15 @@ namespace proyecto_Practica01_.properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Data Source=DESKTOP-G198EGL\\SQLEXPRESS;Initial Catalog = facturacion; Integrated Security = True;.
+        /// </summary>
+        internal static string CadenaConexionNotebook {
+            get {
+                return ResourceManager.GetString("CadenaConexionNotebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Data Source=DESKTOP-T07NA20\SQLEXPRESS;Initial Catalog=facturacion;Integrated Security=True;Encrypt=False;Trust Server Certificate=True.
         /// </summary>
         internal static string CadenaConexionPC {

@@ -13,7 +13,7 @@ namespace proyecto_Practica01_.Data.Utilities
         private SqlConnection _connection;
         private DataHelper()
         {
-            _connection = new SqlConnection(properties.Resources.CadenaConexionPC);
+            _connection = new SqlConnection(properties.Resources.CadenaConexionNotebook);
         }
         public static DataHelper GetInstance()
         {
