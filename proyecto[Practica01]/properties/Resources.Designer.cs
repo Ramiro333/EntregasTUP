@@ -70,7 +70,7 @@ namespace proyecto_Practica01_.properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=DESKTOP-T07NA20\SQLEXPRESS;Initial Catalog=facturacion;Integrated Security=True;Encrypt=False;Trust Server Certificate=True.
+        ///   Busca una cadena traducida similar a Data Source=DESKTOP-T07NA20\SQLEXPRESS;Initial Catalog=facturacionFinal;Integrated Security=True;Encrypt=False;Trust Server Certificate=True.
         /// </summary>
         internal static string CadenaConexionPC {
             get {

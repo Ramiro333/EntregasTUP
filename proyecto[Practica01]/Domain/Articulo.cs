@@ -18,5 +18,6 @@ namespace proyecto_Practica01_.Domain
         {
             return Id_articulo + " - " + Nombre + " - " + Stock + "u. - $" + PrecioUnitario+ "esta activo= "+EstaActivo;
         }
+
     }
 }

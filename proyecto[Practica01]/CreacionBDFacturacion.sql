@@ -1,6 +1,6 @@
-create database facturacion
+create database facturacionFinal
 go
-use facturacion
+use facturacionFinal
 go
 
 create table formasPagos(
@@ -19,7 +19,7 @@ constraint PK_articulos primary key(id_articulo)
 )
 create table clientes(
 id_cliente int identity (1,1),
-nombre varchar(100),
+nombre_cliente varchar(100),
 apellido varchar(100),
 email varchar(100)
 constraint PK_clientes primary key(id_cliente)
@@ -48,7 +48,20 @@ constraint FK_detallesFacturas_articulos foreign key(id_articulo)
 constraint FK_detallesFacturas_facturas foreign key(id_factura)
 										 references facturas(id_factura)
 )
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
 
+create PROCEDURE [dbo].[SP_RECUPERAR_DETALLES_POR_FACTURA]
+	@id_factura int
+as
+begin
+select df.*,a.* from detallesFacturas as df 
+join articulos as a on a.id_articulo=df.id_articulo
+where id_factura=@id_factura
+end
+go
 
 SET ANSI_NULLS ON
 GO
@@ -96,9 +109,32 @@ BEGIN
 	
 END
 GO
---insert factura
+create PROCEDURE [dbo].[SP_INSERTAR_DETALLE_FACTURA]
+	@id_articulo int,
+	@id_factura int,
+	@cantidad int,
+	@precio float
+AS
+BEGIN
+	INSERT INTO detallesFacturas(id_articulo, id_factura, cantidad,precio) VALUES (@id_articulo, @id_factura, @cantidad,@precio);
+END
+go
+--
+create PROCEDURE [dbo].[SP_INSERTAR_FACTURA]
+	@fecha datetime,
+	@id_forma_pago int,
+	@id_cliente int,
+	@ultimoId  int output
+
+AS
+BEGIN
+	INSERT INTO facturas(fecha, id_forma_pago, id_cliente) VALUES (@fecha, @id_forma_pago, @id_cliente);
+	set @ultimoId  = SCOPE_IDENTITY()
+	SET NOCOUNT ON;
+END
 SET ANSI_NULLS ON
 GO
+
 SET QUOTED_IDENTIFIER ON
 GO
 
@@ -106,12 +142,14 @@ CREATE PROCEDURE SP_RECUPERAR_FACTURA_POR_ID
 	@id_factura int
 AS
 BEGIN
-	SELECT f.*, df.precio, df.cantidad, a.*
+	SELECT f.*, fp.*,c.*
 	  FROM facturas as f
-	  INNER JOIN detallesFacturas as df ON df.id_factura =f.id_factura
-	  INNER JOIN articulos as a ON (a.id_articulo = df.id_articulo)
+	  join formasPagos as fp on fp.id_forma_pago = f.id_forma_pago
+	  join clientes as c on c.id_cliente=f.id_cliente
 	  WHERE f.id_factura = @id_factura;
 END
+
+
 GO
 --recuperar facturas 
 SET ANSI_NULLS ON
@@ -122,10 +160,10 @@ GO
 CREATE PROCEDURE SP_RECUPERAR_FACTURAS
 AS
 BEGIN
-	SELECT f.*, df.precio, df.cantidad, a.*
+	SELECT f.*, fp.*,c.*
 	  FROM facturas as f
-	  INNER JOIN detallesFacturas as df ON df.id_factura =f.id_factura
-	  INNER JOIN articulos as a ON (a.id_articulo = df.id_articulo)
+	  join formasPagos as fp on fp.id_forma_pago = f.id_forma_pago
+	  join clientes as c on c.id_cliente=f.id_cliente
 	  ORDER BY f.id_factura;
 END
 GO
@@ -142,7 +180,7 @@ AS
 BEGIN
 	SELECT * FROM articulos WHERE id_articulo = @id_articulo;
 END
-GO
+
 
 --recuperar todos los articulos
 SET ANSI_NULLS ON
@@ -154,7 +192,24 @@ AS
 BEGIN
 	SELECT * FROM articulos
 END
-GO
+go
+create procedure [dbo].[SP_RECUPERAR_DETALLES_FACTURAS]
+as
+begin
+select df.*, a.*
+from detallesFacturas as df 
+join articulos as a on a.id_articulo = df.id_articulo
+end
+go
+
+create PROCEDURE [dbo].[SP_RECUPERAR_ARTICULOS_POR_ID_DETALLE]
+	@id_detalle_factura int
+as
+begin
+select * from detallesFacturas where id_detalleFactura=@id_detalle_factura
+end
+go
+
 
 --eliminacion logica articulo
 SET ANSI_NULLS ON
@@ -175,10 +230,10 @@ INSERT INTO formasPagos (formaPago) VALUES ('Efectivo');
 INSERT INTO formasPagos (formaPago) VALUES ('Tarjeta de Crédito');
 INSERT INTO formasPagos (formaPago) VALUES ('Tarjeta de Débito');
 INSERT INTO formasPagos (formaPago) VALUES ('Transferencia Bancaria');
-INSERT INTO clientes (nombre, apellido, email) VALUES ('Juan', 'Pérez', 'juan.perez@mail.com');
-INSERT INTO clientes (nombre, apellido, email) VALUES ('María', 'Gómez', 'maria.gomez@mail.com');
-INSERT INTO clientes (nombre, apellido, email) VALUES ('Carlos', 'López', 'carlos.lopez@mail.com');
-INSERT INTO clientes (nombre, apellido, email) VALUES ('Ana', 'Martínez', 'ana.martinez@mail.com');
+INSERT INTO clientes (nombre_cliente, apellido, email) VALUES ('Juan', 'Pérez', 'juan.perez@mail.com');
+INSERT INTO clientes (nombre_cliente, apellido, email) VALUES ('María', 'Gómez', 'maria.gomez@mail.com');
+INSERT INTO clientes (nombre_cliente, apellido, email) VALUES ('Carlos', 'López', 'carlos.lopez@mail.com');
+INSERT INTO clientes (nombre_cliente, apellido, email) VALUES ('Ana', 'Martínez', 'ana.martinez@mail.com');
 INSERT INTO articulos (nombre, precioUnitario, estaActivo, stock) 
 VALUES ('Laptop Lenovo', 350000, 1, 10);
 

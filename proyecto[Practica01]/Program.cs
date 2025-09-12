@@ -1,139 +1,111 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using proyecto_Practica01_.Domain;
 using proyecto_Practica01_.Services;
-Console.WriteLine("los metodos estan comentados en program para probarlos por separado! no me dio tiempo a hacer un menu :(");
-//obtener todos los articulos 
+
+FacturaServicio ofactura = new FacturaServicio();
+ArticuloServicio articuloServicio = new ArticuloServicio();
+bool salir = false;
+
+while (!salir)
 {
-    //ArticuloServicio oService = new ArticuloServicio();
-    //Console.WriteLine("Obtener todos los articulos - GetAll");
-    //List<Articulo> la = oService.GetArticulos();
-    //if (la.Count > 0)
-    //    foreach (Articulo a in la)
-    //    {
-    //        Console.WriteLine(a.ToString());
-    //    }
-    //else
-    //    Console.WriteLine("no hay articulos");
-}
+    Console.Clear();
+    Console.WriteLine("=================================");
+    Console.WriteLine("   SISTEMA DE FACTURACIÓN v1.0   ");
+    Console.WriteLine("=================================");
+    Console.WriteLine("1) obtener todas las facturas");
+    Console.WriteLine("2) obtener una factura por id");
+    Console.WriteLine("3) Crear Factura");
+    Console.Write("\nSeleccione una opción: ");
 
-//obtener un articulo por id
-{
-    //Console.WriteLine("\nObtener un articulo por id - GetById");
-
-    //Articulo? articulo2 = oService.GetArticuloById(5);
-    //if (articulo2 != null)
-    //{
-    //    Console.WriteLine(articulo2);
-    //}
-    //else
-    //{
-    //    Console.WriteLine("No hay producto con ese id");
-    //}
-}
-
-//eliminar un articulo
-{ 
-    //Console.WriteLine("eliminar articulo 5(deja de estar activo)");
-    //if (oService.eliminarArticulo(5))
-    //{
-    //    Console.WriteLine("se elimino el articulo 5");
-    //}
-    //else
-    //{
-    //    Console.WriteLine("no se pudo eliminar el articulo");
-    //}
-}
+    string input = Console.ReadLine()?.Trim();
 
 
-//obtener todos los detalles
-{
-//Console.WriteLine("obtener todos los detalles");
-//DetalleFacturasServicio oDetalleFacturaServicio = new DetalleFacturasServicio();
-//List<DetalleFactura> ldf = oDetalleFacturaServicio.GetDetalleFacturas();
-//if (ldf.Count > 0)
-//    foreach (DetalleFactura est in ldf)
-//    {
-//        Console.WriteLine(est);
-//    }
-//else
-//{
-//    Console.WriteLine("no hay detalles");
-//}
-}
-
-
-//obtener todas las facturas
-{
-    //FacturaServicio ofactura = new FacturaServicio();
-    //List<Factura> ldf = ofactura.GetFacturas();
-    //if (ldf.Count > 0)
-    //    foreach (Factura f in ldf)
-    //    {
-    //        Console.WriteLine(f.ToString());
-    //    }
-    //else
-    //    Console.WriteLine("no hay facturas");
-}
-
-
-//obtener una factura por id
-{
-    //FacturaServicio ofactura = new FacturaServicio();
-    //Factura f = ofactura.GetFacturaById(1);
-    //if (f != null)
-    //{
-    //    Console.WriteLine(f.ToString());
-    //}
-    //else
-    //        Console.WriteLine("no hay detalles de factura");
-}
-
-
-//insertar una factura
-{
-    //FacturaServicio ofactura = new FacturaServicio();
-    //Factura f1 = new Factura();
-    //FormaPago fp1 = new FormaPago();
-    //fp1.id = 1;
-    //f1.FormaPago = fp1;
-    //Cliente cliente = new Cliente();
-    //cliente.Id = 1;
-    //f1.Cliente = cliente;
-    //f1.Fecha = DateTime.Now;
-    //ofactura.saveFactura(f1);
-    //List<Factura> ldf = ofactura.GetFacturas();
-    //if (ldf.Count > 0)
-    //    foreach (Factura f in ldf)
-    //    {
-    //        Console.WriteLine(f.ToString());
-    //    }
-    //else
-    //    Console.WriteLine("no hay facturas");
-}
-
-//insertar detalle
-{
-    DetalleFacturasServicio oDetalleFactura = new DetalleFacturasServicio();
-    DetalleFactura df1= new DetalleFactura();
-    Articulo a1 = new Articulo();
-    a1.Id_articulo = 1;
-    df1.Articulo = a1;
-    Factura f1 = new Factura();
-    f1.NroFactura = 1;
-    df1.Factura = f1;
-    df1.cantidad = 2;
-    df1.precio = 13400;
-    oDetalleFactura.saveDetalle(df1);
-    List<DetalleFactura> ldf = oDetalleFactura.GetDetalleFacturas();
-    Console.WriteLine(df1.ToString());
-    if (ldf.Count > 0)
-        foreach (DetalleFactura est in ldf)
-        {
-            Console.WriteLine(est);
-        }
-    else
+    switch (input)
     {
-        Console.WriteLine("no hay detalles");
-    }
+        case "1":
+            List<Factura> ldf = ofactura.GetFacturas();
+            if (ldf.Count > 0)
+                foreach (Factura f in ldf)
+                {
+                    Console.WriteLine(f.ToString());
+                }
 
+            else
+            {
+                Console.WriteLine("no hay facturas");
+            }
+            Console.WriteLine("presione una tecla para seguir");
+            Console.ReadKey();
+            break;
+        case "2":
+            Console.WriteLine("ingrese el id de la factura");
+            int idFactura = Convert.ToInt32(Console.ReadLine()); 
+            Factura? f1 = ofactura.GetFacturaById(idFactura);
+            if (f1 != null)
+            {
+                Console.WriteLine(f1.ToString());
+            }
+            else
+            {
+                Console.WriteLine("no existe la factura");
+            }
+            Console.WriteLine("presione una tecla para seguir");
+            Console.ReadKey(); 
+            break;
+        //
+        case "3":
+            Console.WriteLine("Ingrese el id de la forma de pago:");
+            int idFormaPago = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingrese el id del cliente:");
+            int idCliente = Convert.ToInt32(Console.ReadLine());
+            Factura nuevaFactura = new Factura(idFormaPago, idCliente);
+            bool agregarMas = true;
+            while (agregarMas)
+            {
+                Console.WriteLine("Seleccione un artículo");
+                Console.WriteLine("Artículos disponibles:");
+                List<Articulo> lsArticulos = articuloServicio.GetArticulos();
+                int contador = 1;
+                foreach (Articulo a in lsArticulos)
+                {
+                    Console.WriteLine($"{contador} - {a.Nombre} (Precio: {a.PrecioUnitario})");
+                    contador++;
+                }
+                Console.WriteLine("Ingrese el número del artículo elegido:");
+                int opcion = Convert.ToInt32(Console.ReadLine());
+                Articulo articuloElegido = lsArticulos[opcion - 1];
+                Console.WriteLine("Ingrese la cantidad:");
+                int cantidad = Convert.ToInt32(Console.ReadLine());
+                DetalleFactura detalle = new DetalleFactura()
+                {
+                    Articulo = articuloElegido,
+                    cantidad = cantidad,
+                    precio = articuloElegido.PrecioUnitario,
+                    Factura = nuevaFactura
+                };
+                nuevaFactura.Detalle.Add(detalle); 
+                Console.WriteLine("¿Desea agregar otro artículo? (s/n)");
+                string resp = Console.ReadLine();
+                agregarMas = resp.ToLower() == "s";
+            }
+            bool ok = ofactura.saveFactura(nuevaFactura);
+            if (ok)
+            {
+                Console.WriteLine("Factura guardada correctamente.");
+            }
+            else
+            {
+                Console.WriteLine("Error al guardar la factura.");
+            }
+            Console.WriteLine("Presione una tecla para seguir...");
+            Console.ReadKey();
+            break;
+        case "0":
+            salir = true;
+            break;
+        default:
+            Console.WriteLine("Opción inválida, presione una tecla para continuar...");
+            Console.ReadKey();
+            break;
+    }
 }

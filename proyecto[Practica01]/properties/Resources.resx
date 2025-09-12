@@ -121,6 +121,6 @@
     <value>Data Source=DESKTOP-G198EGL\\SQLEXPRESS;Initial Catalog = facturacion; Integrated Security = True;</value>
   </data>
   <data name="CadenaConexionPC" xml:space="preserve">
-    <value>Data Source=DESKTOP-T07NA20\SQLEXPRESS;Initial Catalog=facturacion;Integrated Security=True;Encrypt=False;Trust Server Certificate=True</value>
+    <value>Data Source=DESKTOP-T07NA20\SQLEXPRESS;Initial Catalog=facturacionFinal;Integrated Security=True;Encrypt=False;Trust Server Certificate=True</value>
   </data>
 </root>

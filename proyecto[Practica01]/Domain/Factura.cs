@@ -24,5 +24,18 @@ namespace proyecto_Practica01_.Domain
             }
             return $"Nro factura:{NroFactura}\ncliente: {Cliente.Nombre} {Cliente.Apellido}\nDetalles: \n{detalles} total = {total}";
         }
+        public Factura(int idFormaPago,int idCliente) 
+        {
+            Fecha = DateTime.Now;
+            FormaPago = new FormaPago();
+            FormaPago.id = idFormaPago;
+            Cliente = new Cliente();
+            Cliente.Id = idCliente;
+            Detalle = new List<DetalleFactura>();
+        }
+        public Factura() 
+        {
+
+        }
     }
 }

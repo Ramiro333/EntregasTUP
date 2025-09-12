@@ -82,13 +82,7 @@ namespace proyecto_Practica01_.Data.Repositorios
 
         public bool Save(Factura factura)
         {
-            List<ParameterSP> param = new List<ParameterSP>()
-            {
-                new("@fecha", factura.Fecha),
-                new("@id_forma_pago", factura.FormaPago.id),
-                new("@id_cliente", factura.Cliente.Id),
-            };
-            return DataHelper.GetInstance().ExecuteSPNonQuery("SP_INSERTAR_FACTURA", param);
+            return DataHelper.GetInstance().ExecuteTransaction(factura);
         }
         public List<DetalleFactura> GetDetallesPorIdFactura(int id)
         {
