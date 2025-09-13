@@ -225,6 +225,14 @@ BEGIN
 	UPDATE articulos SET estaActivo  = 0 WHERE id_articulo = @id_articulo;
 END
 GO
+
+create procedure SP_ELIMINAR_ARTICULO
+@id_articulo int
+as
+begin
+delete from articulos where id_articulo=@id_articulo
+end
+go
 -- ISNTERTS
 INSERT INTO formasPagos (formaPago) VALUES ('Efectivo');
 INSERT INTO formasPagos (formaPago) VALUES ('Tarjeta de Crédito');
