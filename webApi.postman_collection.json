@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "935b23c0-37d2-4629-929d-716c2570013f",
+		"name": "webApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31372337"
+	},
+	"item": [
+		{
+			"name": "articulos",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7143/api/Articulos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Articulos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7143/api/Articulos/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Articulos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"pesi\",\r\n  \"precioUnitario\": 10,\r\n  \"estaActivo\": true,\r\n  \"stock\": 200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7143/api/Articulos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Articulos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7143/api/Articulos/8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Articulos",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"pesi cambiada\",\r\n  \"precioUnitario\": 12,\r\n  \"estaActivo\": true,\r\n  \"stock\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7143/api/Articulos/9",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Articulos",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "facturas",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7143/api/Factura",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Factura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7143/api/Factura/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Factura",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fecha\": \"2025-09-13T01:46:33.791Z\",\r\n  \"formaPago\": {\r\n    \"nombre\": \"efectivo\"\r\n  },\r\n  \"cliente\": {\r\n    \"id\": 0,\r\n    \"nombre\": \"string\",\r\n    \"apellido\": \"string\",\r\n    \"email\": \"string\"\r\n  },\r\n  \"detalle\": [\r\n    {\r\n      \"idDetalleFactura\": 0,\r\n      \"articulo\": {\r\n        \"id_articulo\": 0,\r\n        \"nombre\": \"string\",\r\n        \"precioUnitario\": 0,\r\n        \"estaActivo\": true,\r\n        \"stock\": 0\r\n      },\r\n      \"factura\": \"string\",\r\n      \"cantidad\": 0,\r\n      \"precio\": 0\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7143/api/Factura",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"Factura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7143/api/ArticulosControler/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"ArticulosControler",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"el nuevo\",\r\n  \"precioUnitario\": 12220,\r\n  \"estaActivo\": true,\r\n  \"stock\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7143/api/ArticulosControler/6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7143",
+							"path": [
+								"api",
+								"ArticulosControler",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
