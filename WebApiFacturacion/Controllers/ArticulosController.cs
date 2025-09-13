@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
 using proyecto_Practica01_.Domain;
 using proyecto_Practica01_.Services.Implementacion;
 using proyecto_Practica01_.Services.Interfaces;
@@ -9,10 +10,10 @@ namespace WebApiFacturacion.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ArticulosControler : ControllerBase
+    public class ArticulosController : ControllerBase
     {
         IArticuloService _articuloService;
-        public ArticulosControler(IArticuloService articuloService)
+        public ArticulosController(IArticuloService articuloService)
         {
             _articuloService = articuloService;
         }
@@ -26,13 +27,13 @@ namespace WebApiFacturacion.Controllers
                 var lst = _articuloService.GetAll();
                 if (lst == null)
                 {
-                    return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "error al acceder a datos" });
+                    return Problem(detail: "no hay articulos", statusCode: 500);
                 }
-                return StatusCode(StatusCodes.Status200OK, new { mensaje = "articulos obtenidos con exito",lst });
+                return Ok(new { mensaje = "Artículos obtenidos con éxito", datos = lst });
             }
             catch (Exception)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "error al acceder a datos" });
+                return Problem(detail: "Error al acceder a datos", statusCode: 500);
             }
         }
 
@@ -42,11 +43,16 @@ namespace WebApiFacturacion.Controllers
         {
             try
             {
-                return Ok(_articuloService.GetById(id));
+                Articulo? art = _articuloService.GetById(id);
+                if (art == null)
+                {
+                    return BadRequest(new { mensaje = "articulo no encontrado" });
+                }
+                return Ok(new { mensaje = "Artículo obtenidos con éxito", Articulo = art });
             }
             catch (Exception)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "error al acceder a datos" });
+                return Problem(detail: "Error interno al acceder al artículo", statusCode: 500);
             }
         }
 
@@ -54,25 +60,23 @@ namespace WebApiFacturacion.Controllers
         [HttpPost]
         public IActionResult Post(Articulo articulo)
         {
+            if (articulo == null)
+                return BadRequest(new { mensaje = "El artículo no puede ser nulo" });
             try
             {
-                if (articulo == null)
-                {
-                    return BadRequest();
-                }
                 bool resutl = _articuloService.Create(articulo);
                 if (resutl)
                 {
-                    return StatusCode(StatusCodes.Status201Created, $"articulo {articulo.Id_articulo} creado con exito");
+                    return Ok(new { mensaje = "Artículo creado con éxito", Articulo = articulo });
                 }
                 else
                 {
-                    return StatusCode(500, "no se ha podido gaurar el articulo");
+                    return Problem(detail: "No se ha podido guardar el artículo", statusCode: 500);
                 }
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "no se ha podido gaurar el articulo");
+                return Problem(detail: "Error interno al guardar el artículo", statusCode: 500);
             }
         }
 
@@ -80,27 +84,25 @@ namespace WebApiFacturacion.Controllers
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] Articulo articulo)
         {
+            if (articulo == null)
+                return BadRequest(new { mensaje = "El artículo no puede ser nulo" });
             try
             {
-                if (articulo == null)
-                {
-                    return BadRequest();
-                }
                 articulo.Id_articulo = id;
                 bool result = _articuloService.Create(articulo);
                 if (result)
                 {
-                    return StatusCode(StatusCodes.Status201Created, new { mensaje = $"articulo actualizado con exito { articulo }"  });
+                    return Ok(new { mensaje = "Artículo actualizado con éxito", Articulo = articulo });
                 }
                 else
                 {
-                    return StatusCode(500, "no se ha podido actualizar el articulo");
+                    return Problem(detail: "No se ha podido actualizar el artículo", statusCode: 500);
                 }
             }
             catch (Exception)
             {
 
-                return StatusCode(500, "no se ha podido actualizar el articulo");
+                return Problem(detail: "Error interno al actualizar el artículo", statusCode: 500);
             }
         }
 
@@ -113,16 +115,16 @@ namespace WebApiFacturacion.Controllers
                 bool result = _articuloService.Delete(id);
                 if (result)
                 {
-                    return StatusCode(StatusCodes.Status200OK, "articulo eliminad con exito");
+                    return Ok(new { mensaje = "Artículo eliminado con éxito"});
                 }
                 else
                 {
-                    return StatusCode(500, "no se ha podido eliminar el articulo");
+                    return Problem(detail: "no se ha podido eliminar el artículo", statusCode: 500);
                 }
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "no se ha podido eliminar el articulo");
+                return Problem(detail: "Error interno al eliminar el artículo", statusCode: 500);
             }
         }
     }

@@ -3,10 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\WebApiFacturacion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F2F697D-2AB0-EF1E-0A74-2FA50F3AAC63}|..\\proyectoPractica01\\proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyectopractica01\\data\\repositorios\\articulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2CCEC073-5428-4EEE-827D-C900FF0C566A}|WebApiFacturacion.csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\webapifacturacion\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CCEC073-5428-4EEE-827D-C900FF0C566A}|WebApiFacturacion.csproj|solutionrelative:controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CCEC073-5428-4EEE-827D-C900FF0C566A}|WebApiFacturacion.csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\webapifacturacion\\controllers\\articuloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CCEC073-5428-4EEE-827D-C900FF0C566A}|WebApiFacturacion.csproj|solutionrelative:controllers\\articuloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CCEC073-5428-4EEE-827D-C900FF0C566A}|WebApiFacturacion.csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\webapifacturacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CCEC073-5428-4EEE-827D-C900FF0C566A}|WebApiFacturacion.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F2F697D-2AB0-EF1E-0A74-2FA50F3AAC63}|..\\proyectoPractica01\\proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyectopractica01\\data\\interfaces\\iarticulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F2F697D-2AB0-EF1E-0A74-2FA50F3AAC63}|..\\proyectoPractica01\\proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyectopractica01\\data\\repositorios\\articulorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F2F697D-2AB0-EF1E-0A74-2FA50F3AAC63}|..\\proyectoPractica01\\proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyectopractica01\\services\\implementacion\\articuloservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -15,15 +27,7 @@
       "AbsoluteMoniker": "D:0:0:{2F2F697D-2AB0-EF1E-0A74-2FA50F3AAC63}|..\\proyectoPractica01\\proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyectopractica01\\services\\interfaces\\iarticuloservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CCEC073-5428-4EEE-827D-C900FF0C566A}|WebApiFacturacion.csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\webapifacturacion\\controllers\\articuloscontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CCEC073-5428-4EEE-827D-C900FF0C566A}|WebApiFacturacion.csproj|solutionrelative:controllers\\articuloscontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2F2F697D-2AB0-EF1E-0A74-2FA50F3AAC63}|..\\proyectoPractica01\\proyecto[Practica01].csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\proyectopractica01\\data\\repositorios\\facturarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CCEC073-5428-4EEE-827D-C900FF0C566A}|WebApiFacturacion.csproj|c:\\users\\ramiro\\desktop\\shared\\materias\\prograii\\entregas\\webapifacturacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CCEC073-5428-4EEE-827D-C900FF0C566A}|WebApiFacturacion.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,11 +37,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "FacturaController.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\WebApiFacturacion\\Controllers\\FacturaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FacturaController.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\WebApiFacturacion\\Controllers\\FacturaController.cs",
+              "RelativeToolTip": "Controllers\\FacturaController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAQwDQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T01:15:00.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IArticuloRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyectoPractica01\\Data\\Interfaces\\IArticuloRepository.cs",
               "RelativeDocumentMoniker": "..\\proyectoPractica01\\Data\\Interfaces\\IArticuloRepository.cs",
@@ -50,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "FacturaRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyectoPractica01\\Data\\Repositorios\\FacturaRepository.cs",
               "RelativeDocumentMoniker": "..\\proyectoPractica01\\Data\\Repositorios\\FacturaRepository.cs",
@@ -58,12 +75,11 @@
               "RelativeToolTip": "..\\proyectoPractica01\\Data\\Repositorios\\FacturaRepository.cs",
               "ViewState": "AgIAAFAAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T00:33:48.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T00:33:48.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ArticuloRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyectoPractica01\\Data\\Repositorios\\ArticuloRepository.cs",
               "RelativeDocumentMoniker": "..\\proyectoPractica01\\Data\\Repositorios\\ArticuloRepository.cs",
@@ -76,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "IArticuloService.cs",
               "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyectoPractica01\\Services\\Interfaces\\IArticuloService.cs",
               "RelativeDocumentMoniker": "..\\proyectoPractica01\\Services\\Interfaces\\IArticuloService.cs",
@@ -84,12 +100,11 @@
               "RelativeToolTip": "..\\proyectoPractica01\\Services\\Interfaces\\IArticuloService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T00:27:58.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T00:27:58.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ArticuloServicio.cs",
               "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\proyectoPractica01\\Services\\Implementacion\\ArticuloServicio.cs",
               "RelativeDocumentMoniker": "..\\proyectoPractica01\\Services\\Implementacion\\ArticuloServicio.cs",
@@ -97,31 +112,51 @@
               "RelativeToolTip": "..\\proyectoPractica01\\Services\\Implementacion\\ArticuloServicio.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAqwCYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T00:28:09.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-13T00:28:09.415Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\WebApiFacturacion\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\WebApiFacturacion\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T00:09:38.23Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "bb446de0-0d3f-4178-851b-fa2a23f4bc5d",
+        "Display": 1,
+        "X": 187,
+        "Y": 71,
+        "Width": 1586,
+        "Height": 861,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ArticulosControler.cs",
-              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\WebApiFacturacion\\Controllers\\ArticulosControler.cs",
-              "RelativeDocumentMoniker": "Controllers\\ArticulosControler.cs",
-              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\WebApiFacturacion\\Controllers\\ArticulosControler.cs",
-              "RelativeToolTip": "Controllers\\ArticulosControler.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAQwHEAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ArticulosController.cs",
+              "DocumentMoniker": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\WebApiFacturacion\\Controllers\\ArticulosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ArticulosController.cs",
+              "ToolTip": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\WebApiFacturacion\\Controllers\\ArticulosController.cs",
+              "RelativeToolTip": "Controllers\\ArticulosController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAcwHcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T00:10:04.254Z",
               "EditorCaption": ""

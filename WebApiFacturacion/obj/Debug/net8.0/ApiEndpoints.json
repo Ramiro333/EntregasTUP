@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "WebApiFacturacion.Controllers.ArticulosControler",
+    "ContainingType": "WebApiFacturacion.Controllers.ArticulosController",
     "Method": "Get",
-    "RelativePath": "api/ArticulosControler",
+    "RelativePath": "api/Articulos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,9 +10,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiFacturacion.Controllers.ArticulosControler",
+    "ContainingType": "WebApiFacturacion.Controllers.ArticulosController",
     "Method": "Post",
-    "RelativePath": "api/ArticulosControler",
+    "RelativePath": "api/Articulos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -26,9 +26,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiFacturacion.Controllers.ArticulosControler",
+    "ContainingType": "WebApiFacturacion.Controllers.ArticulosController",
     "Method": "Get",
-    "RelativePath": "api/ArticulosControler/{id}",
+    "RelativePath": "api/Articulos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -42,9 +42,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiFacturacion.Controllers.ArticulosControler",
+    "ContainingType": "WebApiFacturacion.Controllers.ArticulosController",
     "Method": "Put",
-    "RelativePath": "api/ArticulosControler/{id}",
+    "RelativePath": "api/Articulos/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -63,9 +63,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiFacturacion.Controllers.ArticulosControler",
+    "ContainingType": "WebApiFacturacion.Controllers.ArticulosController",
     "Method": "Delete",
-    "RelativePath": "api/ArticulosControler/{id}",
+    "RelativePath": "api/Articulos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -73,6 +73,69 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiFacturacion.Controllers.FacturaController",
+    "Method": "Get",
+    "RelativePath": "api/Factura",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiFacturacion.Controllers.FacturaController",
+    "Method": "Post",
+    "RelativePath": "api/Factura",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "factura",
+        "Type": "proyecto_Practica01_.Domain.Factura",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiFacturacion.Controllers.FacturaController",
+    "Method": "Get",
+    "RelativePath": "api/Factura/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiFacturacion.Controllers.FacturaController",
+    "Method": "Put",
+    "RelativePath": "api/Factura/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "factura",
+        "Type": "proyecto_Practica01_.Domain.Factura",
         "IsRequired": true
       }
     ],
