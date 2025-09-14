@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using proyecto_Practica01_.Domain;
 using proyecto_Practica01_.Services.Interfaces;
+using WebApiFacturacion.DTOs;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -51,17 +52,29 @@ namespace WebApiFacturacion.Controllers
 
         // POST api/<FacturaController>
         [HttpPost]
-        public IActionResult Post(Factura factura)
+        public IActionResult Post(FacturaDTO dto)
         {
-            if(factura == null)
+            if(dto == null)
                 return BadRequest(new { mensaje = "La factura no puede ser nula" });
             try
             {
-
-                bool resutl = _facturaServicio.saveFactura(factura);
+                Factura nuevaFactura = new Factura
+                {
+                    Fecha = dto.Fecha,
+                    FormaPago = new FormaPago { id = dto.IdFormaPago },
+                    Cliente = new Cliente { Id = dto.IdCliente },
+                    Detalle = dto.Detalle.Select(d => new DetalleFactura
+                        {
+                            Articulo = new Articulo { Id_articulo = d.IdArticulo },
+                            cantidad = d.Cantidad,
+                            precio = d.Precio,
+                        }).ToList()
+        }
+                ;
+                bool resutl = _facturaServicio.saveFactura(nuevaFactura);
                 if (resutl)
                 {
-                    return Ok(new { mensaje = "factura creada con éxito", Factura = factura });
+                    return Ok(new { mensaje = "factura creada con éxito", Factura = nuevaFactura });
                 }
                 else
                 {

@@ -8,7 +8,7 @@ namespace proyecto_Practica01_.Domain
 {
     public class FormaPago
     {
-        public int id;
+        public int id { get; set; }
         public string Nombre {  get; set; }
     }
 }

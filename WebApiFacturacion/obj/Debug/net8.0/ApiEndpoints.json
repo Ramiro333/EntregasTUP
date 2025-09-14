@@ -97,8 +97,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "factura",
-        "Type": "proyecto_Practica01_.Domain.Factura",
+        "Name": "dto",
+        "Type": "WebApiFacturacion.DTOs.FacturaDTO",
         "IsRequired": true
       }
     ],

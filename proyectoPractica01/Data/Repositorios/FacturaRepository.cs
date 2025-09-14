@@ -103,6 +103,9 @@ namespace proyecto_Practica01_.Data.Repositorios
                 df.Articulo = new Articulo();
                 df.Articulo.Id_articulo = (int)row["id_articulo"];
                 df.Articulo.Nombre = (string)row["nombre"];
+                df.Articulo.PrecioUnitario = (double)row["precioUnitario"];
+                df.Articulo.EstaActivo = (bool)row["estaActivo"];
+                df.Articulo.Stock = (int)row["stock"];
                 df.Factura = new Factura();
                 df.Factura.NroFactura = (int)row["id_factura"];
                 df.cantidad = (int)row["cantidad"];
