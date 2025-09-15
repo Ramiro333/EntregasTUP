@@ -179,7 +179,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:7143/api/Factura/1",
+							"raw": "https://localhost:7143/api/Factura/7",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -188,7 +188,7 @@
 							"path": [
 								"api",
 								"Factura",
-								"1"
+								"7"
 							]
 						}
 					},
@@ -204,7 +204,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"fecha\": \"2025-09-13T01:46:33.791Z\",\r\n  \"formaPago\": {\r\n    \"nombre\": \"efectivo\"\r\n  },\r\n  \"cliente\": {\r\n    \"id\": 0,\r\n    \"nombre\": \"string\",\r\n    \"apellido\": \"string\",\r\n    \"email\": \"string\"\r\n  },\r\n  \"detalle\": [\r\n    {\r\n      \"idDetalleFactura\": 0,\r\n      \"articulo\": {\r\n        \"id_articulo\": 0,\r\n        \"nombre\": \"string\",\r\n        \"precioUnitario\": 0,\r\n        \"estaActivo\": true,\r\n        \"stock\": 0\r\n      },\r\n      \"factura\": \"string\",\r\n      \"cantidad\": 0,\r\n      \"precio\": 0\r\n    }\r\n  ]\r\n}",
+							"raw": "{\r\n  \"fecha\": \"2025-09-13T00:00:00\",\r\n  \"idFormaPago\": 1,\r\n  \"idCliente\": 2,\r\n  \"detalle\": [\r\n    {\r\n      \"idArticulo\": 1,\r\n      \"cantidad\": 5,\r\n      \"precio\": 100\r\n    }\r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
