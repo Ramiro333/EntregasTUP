@@ -92,7 +92,7 @@ namespace proyecto_Practica01_.Data.Utilities
             {
                 var cmd = new SqlCommand("SP_INSERTAR_FACTURA", _connection, transaction);
                 cmd.CommandType = CommandType.StoredProcedure;
-
+                cmd.Parameters.AddWithValue("@id_factura", factura.NroFactura);
                 cmd.Parameters.AddWithValue("@fecha", factura.Fecha);
                 cmd.Parameters.AddWithValue("@id_forma_pago", factura.FormaPago.id);
                 cmd.Parameters.AddWithValue("@id_cliente", factura.Cliente.Id);
@@ -100,14 +100,16 @@ namespace proyecto_Practica01_.Data.Utilities
 
                 SqlParameter paramOut = new SqlParameter("@ultimoId", SqlDbType.Int)
                 {
-                    Direction = ParameterDirection.Output
+                    Direction = ParameterDirection.Output,
+                    Value = 0
                 };
                 cmd.Parameters.Add(paramOut);
 
                 int affectedRows = cmd.ExecuteNonQuery();
                 int ultimoId = (cmd.Parameters["@ultimoId"].Value != DBNull.Value)
                                ? (int)cmd.Parameters["@ultimoId"].Value
-                               : -1;
+                               : factura.NroFactura;
+
                 if (affectedRows <= 0 )
                 {
                     transaction.Rollback();
@@ -115,8 +117,9 @@ namespace proyecto_Practica01_.Data.Utilities
                 }
                 foreach (DetalleFactura df in factura.Detalle)
                 {
-                    SqlCommand cmdDetalle = new SqlCommand("SP_INSERTAR_DETALLE_FACTURA", _connection, transaction);
+                    SqlCommand cmdDetalle = new SqlCommand("SP_INSERTAR_DETALLE", _connection, transaction);
                     cmdDetalle.CommandType = CommandType.StoredProcedure;
+                    cmdDetalle.Parameters.AddWithValue("@id_detalle_factura", df.idDetalleFactura);
                     cmdDetalle.Parameters.AddWithValue("@id_articulo", df.Articulo.Id_articulo);
                     cmdDetalle.Parameters.AddWithValue("@cantidad", df.cantidad);
                     cmdDetalle.Parameters.AddWithValue("@precio", df.precio);
@@ -129,6 +132,32 @@ namespace proyecto_Practica01_.Data.Utilities
                         return false;
                     }
                 }
+                transaction.Commit();
+                return true;
+            }
+            catch
+            {
+                transaction.Rollback();
+                return false;
+            }
+            finally
+            {
+                _connection.Close();
+            }
+        }
+        public bool DeleteFactura(int idFactura)
+        {
+            _connection.Open();
+            SqlTransaction transaction = _connection.BeginTransaction();
+
+            try
+            {
+                var cmd = new SqlCommand("SP_ELIMINAR_FACTURA", _connection, transaction);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id_factura", idFactura);
+
+                cmd.ExecuteNonQuery();
+
                 transaction.Commit();
                 return true;
             }

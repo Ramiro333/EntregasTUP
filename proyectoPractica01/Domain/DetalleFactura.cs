@@ -19,7 +19,7 @@ namespace proyecto_Practica01_.Domain
         }
         public string ToStringConFactura()
         {
-            return "id factura = "+Factura+" id detalle = " + idDetalleFactura + " monto = " + cantidad * precio + " Articulo = " + Articulo.Nombre;
+            return "id factura = "+Factura.NroFactura+" id detalle = " + idDetalleFactura + " monto = " + cantidad * precio + " Articulo = " + Articulo.Nombre;
         }
     }
 }

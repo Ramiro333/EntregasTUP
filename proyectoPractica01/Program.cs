@@ -88,7 +88,7 @@ while (!salir)
                 string resp = Console.ReadLine();
                 agregarMas = resp.ToLower() == "s";
             }
-            bool ok = ofactura.saveFactura(nuevaFactura);
+            bool ok = ofactura.SaveFactura(nuevaFactura);
             if (ok)
             {
                 Console.WriteLine("Factura guardada correctamente.");

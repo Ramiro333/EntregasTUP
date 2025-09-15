@@ -14,7 +14,7 @@ namespace proyecto_Practica01_.Data.Repositorios
     {
         public bool DeleteFactura(int id)
         {
-            throw new NotImplementedException();
+            return DataHelper.GetInstance().DeleteFactura(id);
         }
 
         public List<Factura> GetAll()

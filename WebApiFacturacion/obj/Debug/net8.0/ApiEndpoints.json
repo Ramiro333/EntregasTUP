@@ -134,8 +134,24 @@
         "IsRequired": true
       },
       {
-        "Name": "factura",
-        "Type": "proyecto_Practica01_.Domain.Factura",
+        "Name": "dto",
+        "Type": "WebApiFacturacion.DTOs.FacturaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiFacturacion.Controllers.FacturaController",
+    "Method": "Delete",
+    "RelativePath": "api/Factura/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

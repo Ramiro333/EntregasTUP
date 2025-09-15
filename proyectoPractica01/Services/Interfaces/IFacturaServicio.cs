@@ -11,6 +11,7 @@ namespace proyecto_Practica01_.Services.Interfaces
     {
         List<Factura> GetFacturas();
         Factura? GetFacturaById(int id);
-        bool saveFactura(Factura factura);
+        bool SaveFactura(Factura factura);
+        bool DeleteFactura(int id);
     }
 }

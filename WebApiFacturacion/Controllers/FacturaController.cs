@@ -58,20 +58,23 @@ namespace WebApiFacturacion.Controllers
                 return BadRequest(new { mensaje = "La factura no puede ser nula" });
             try
             {
+
                 Factura nuevaFactura = new Factura
                 {
+                    NroFactura = 0,
                     Fecha = dto.Fecha,
                     FormaPago = new FormaPago { id = dto.IdFormaPago },
                     Cliente = new Cliente { Id = dto.IdCliente },
                     Detalle = dto.Detalle.Select(d => new DetalleFactura
                         {
-                            Articulo = new Articulo { Id_articulo = d.IdArticulo },
+                        idDetalleFactura = 0,
+                        Articulo = new Articulo { Id_articulo = d.IdArticulo },
                             cantidad = d.Cantidad,
                             precio = d.Precio,
                         }).ToList()
-        }
+                }
                 ;
-                bool resutl = _facturaServicio.saveFactura(nuevaFactura);
+                bool resutl = _facturaServicio.SaveFactura(nuevaFactura);
                 if (resutl)
                 {
                     return Ok(new { mensaje = "factura creada con éxito", Factura = nuevaFactura });
@@ -89,17 +92,31 @@ namespace WebApiFacturacion.Controllers
 
         // PUT api/<FacturaController>/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Factura factura)
+        public IActionResult Put(int id, [FromBody] FacturaDTO dto )
         {
-            if (factura == null)
+            if (dto == null)
                 return BadRequest(new { mensaje = "La factura no puede ser nula" });
             try
             {
-                factura.NroFactura = id;
-                bool result = _facturaServicio.saveFactura(factura);
+                Factura nuevaFactura = new Factura
+                {
+                    NroFactura= id,
+                    Fecha = dto.Fecha,
+                    FormaPago = new FormaPago { id = dto.IdFormaPago },
+                    Cliente = new Cliente { Id = dto.IdCliente },
+                    Detalle = dto.Detalle.Select(d => new DetalleFactura
+                    {
+                        idDetalleFactura = d.IdDetalleFactura,
+                        Articulo = new Articulo { Id_articulo = d.IdArticulo },
+                        cantidad = d.Cantidad,
+                        precio = d.Precio,
+                    }).ToList()
+                }
+                ;
+                bool result = _facturaServicio.SaveFactura(nuevaFactura);
                 if (result)
                 {
-                    return Ok(new { mensaje = "factura actualizado con éxito", Factura = factura });
+                    return Ok(new { mensaje = "factura actualizado con éxito", Factura = nuevaFactura });
                 }
                 else
                 {
@@ -114,6 +131,21 @@ namespace WebApiFacturacion.Controllers
         }
 
         // DELETE api/<FacturaController>/5
-
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                bool result = _facturaServicio.DeleteFactura(id);
+                if (result)
+                    return Ok(new { mensaje = "Factura eliminada con éxito" });
+                else
+                    return Problem(detail:"No se pudo eliminar la factura", statusCode: 500);
+            }
+            catch (Exception)
+            {
+                return Problem("Error interno al eliminar la factura", statusCode: 500);
+            }
+        }
     }
 }

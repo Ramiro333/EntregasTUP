@@ -25,10 +25,15 @@ namespace proyecto_Practica01_.Services.Implementacion
         {
             return _FacturaRepository.GetById(id);
         }
-        public bool saveFactura(Factura factura)
+        public bool SaveFactura(Factura factura)
         {
 
             return _FacturaRepository.Save(factura);
+        }
+        public bool DeleteFactura(int id)
+        
+        {
+            return _FacturaRepository.DeleteFactura(id);
         }
     }
 }
