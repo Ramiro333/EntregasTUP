@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WP+khD3DkpM=",
+  "dgSpecHash": "3/Elf4rOf7c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\WebApiFacturacion\\WebApiFacturacion.csproj",
+  "projectFilePath": "C:\\Users\\Ramiro\\Desktop\\shared\\materias\\prograII\\entregas\\EntregasTUP\\WebApiFacturacion\\WebApiFacturacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ramiro\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Ramiro\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
